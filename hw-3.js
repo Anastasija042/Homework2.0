@@ -61,4 +61,27 @@ switch (monthNumber) {
         console.log('такого месяца не бывает')
         break;
 }
+
+// Задание 7
+
+let zufra = prompt("Введите число");
+if (!isNaN(Number(zufra))) {
+  if (Number(zufra) % 2 === 0) {
+    alert("чётное");
+  } else {
+    alert("нечётное");
+  }
+} else {
+  alert("это не число");
+}
+
+// Задание 8
+let clientOS = 0;
+if (clientOS === 0) {
+  console.log("Установите версию приложения для iOS по ссылке");
+} else if (clientOS === 1) {
+  console.log("Установите версию приложения для Android по ссылке");
+} else {
+  console.log("Неизвестная система");
+}
 */
