@@ -55,6 +55,7 @@ a {
   line-height: 18px;
   color: #FFF;
   transition: 0.3s;
+  border: none;
 }
 
 .product {
