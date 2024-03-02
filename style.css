@@ -71,19 +71,20 @@ a {
     padding: 32px;
 }
 
-.product_content1{
+.product_content:first-child {
     background-image: url(img/game1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
 }
-.product_content2{
+.product_content:nth-child(2) {
     background-image: url(img/game2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
 
-}.product_content3{
+}
+.product_content:last-child {
     background-image: url(img/game3.png);
     background-repeat: no-repeat;
     background-position: center;
