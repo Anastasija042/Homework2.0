@@ -1,4 +1,4 @@
-/*// Задание 1
+// Задание 1
 let password = "пароль";
 let QuestionPassword = prompt("Какой пароль?");
 if (QuestionPassword === password) {
@@ -33,7 +33,7 @@ let b = '3';
 alert(Number(a) + Number(b));
 
 // Задание 5
-let monthNumber = String(prompt('Введите номер месяца'));
+let monthNumber = prompt('Введите номер месяца');
 
 switch (monthNumber) {
     case '12':

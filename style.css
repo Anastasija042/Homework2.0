@@ -18,7 +18,6 @@ a {
 
 .top {
   height: 1024px;
-  width: 1440px;
   background-image: url(img/topbackground.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -60,7 +59,6 @@ a {
 
 .product {
   background-image: url(img/contentbackground.jpg);
-  width: 1440px;
   padding-top: 128px;
   padding-bottom: 128px;
   display: flex;
@@ -101,13 +99,94 @@ a {
   background-size: cover;
 }
 
+.footer_title {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer_slogan {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer_content_button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFF;
+  transition: 0.3s;
+}
+
+.footer_info_game_back {
+  height: 1024px;
+  background-image: url(img/footerbackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: calc(50% - 601px);
+  padding-right: calc(50% - 601px);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+.footer_info_game_back_two {
+  height: 1024px;
+  background-image: url(img/footerbackground_game_two.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: calc(50% - 601px);
+  padding-right: calc(50% - 601px);
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer_info_game {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_info_game_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+}
+
+.footer_info_game_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: flex-end;
+  width: 485px;
+  height: 333px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 383px);
     padding-right: calc(50% - 383px);
-  }
-  .top {
-    width: 375px;
   }
   .top_title {
     text-align: center;
@@ -124,11 +203,32 @@ a {
   .product {
     display: flex;
     flex-wrap: wrap;
-    width: 375px;
   }
   .product_content {
     border-radius: 16px;
     margin-left: 16px;
     margin-right: 16px;
+  }
+  .footer_info_game_one {
+    text-align: center;
+  }
+  .footer_title {
+    font-size: 32px;
+  }
+  .footer_slogan {
+    font-size: 14px;
+  }
+  .footer_info_game_two {
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer_logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
