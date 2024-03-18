@@ -11,15 +11,15 @@ console.log(underNumber(8, 6));
 
 function evenNumber(n) {
   if (n % 2 === 0) {
-    console.log("чётное");
+    return "чётное";
   } else {
-    console.log("нечётное");
+    return "нечётное";
   }
 }
-evenNumber(2);
-evenNumber(3);
-evenNumber(1555);
-evenNumber(1554);
+console.log(evenNumber(2));
+console.log(evenNumber(3));
+console.log(evenNumber(1555));
+console.log(evenNumber(1554));
 
 //Задание 3.1
 function squareNumber(number) {
@@ -39,14 +39,18 @@ console.log(returnSquare(7));
 
 function age() {
   let n = prompt("Сколько Вам лет?");
-  if (n < 0) {
+
+  if (isNaN(n) || n === "") {
     alert("Вы ввели неправильное значение");
-  } else if (n > 0 && n < 12) {
+  } else if (n < 0) {
+    alert("Вы ввели отрицательное значение");
+  } else if (n < 12) {
     alert("Привет, друг!");
   } else {
     alert("Добро пожаловать!");
   }
 }
+
 age();
 
 //Задание 4
@@ -66,19 +70,20 @@ console.log(numbers("b", "42"));
 
 // Задание 6
 
-function numberCucumber() {
-  let getNumber = prompt("Введите число");
-  if (!isNaN(getNumber)) {
-    let number = parseInt(getNumber);
-    let cube = number ** 3;
+function numberCube() {
+  let getInput = prompt("Введите число");
+  let number = Number(getInput);
 
+  if (!isNaN(number)) {
+    let cube = number ** 3;
     return number + " в кубе равняется " + cube;
   } else {
     return "Переданный параметр не является числом";
   }
 }
+
 for (let i = 0; i <= 10; i++) {
-  console.log(numberCucumber());
+  console.log(numberCube());
 }
 
 // Задание 7

@@ -1,7 +1,7 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .center {
-        padding-left: calc(50% - 383px);
-        padding-right: calc(50% - 383px);
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .top {
         
@@ -18,7 +18,10 @@
             justify-content: center;
         }
     }
-    .product {
+    .game {
+        flex-wrap: wrap;
+    }
+    .section_one {
         display: flex;
         flex-wrap: wrap;
         
@@ -26,11 +29,12 @@
             border-radius: 16px;
             margin-left: 16px;
             margin-right: 16px;
+            height: 230px;
+            width: 250px;
         }
     }
-    .footer {
-        
-        
+    .section_two {
+                
         &_info_game_one{
             text-align: center;
             
