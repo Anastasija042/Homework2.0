@@ -1,4 +1,4 @@
-// Задание 1
+/*// Задание 1
 let password = "пароль";
 let QuestionPassword = prompt("Какой пароль?");
 if (QuestionPassword === password) {
